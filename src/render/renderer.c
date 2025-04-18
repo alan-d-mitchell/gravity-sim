@@ -126,7 +126,7 @@ void renderer_main_loop(Renderer *renderer, Particle *particles, int particle_co
 
 void renderer_render_frame(Renderer *renderer, Particle *particles, int particle_count) {
     // Clear the screen
-    glClearColor(0.05f, 0.05f, 0.1f, 1.0f); // Dark blue background
+    glClearColor(0.2f, 0.0f, 0.2f, 1.0f); // Dark blue background
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // Use our shader program

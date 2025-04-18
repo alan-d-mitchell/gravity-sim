@@ -116,4 +116,6 @@ void shader_set_vec3(Shader *shader, const char *name, float x, float y, float z
 
 void shader_set_mat4(Shader *shader, const char *name, const float *matrix) {
     GLint location = glGetUniformLocation(shader->program, name);
+    glUniformMatrix4fv(location, 1, GL_FALSE, matrix);
+}
     

@@ -18,8 +18,8 @@ void config_init(SimConfig *config) {
     // Particle settings
     config->particle_min_mass = 100.0f;
     config->particle_max_mass = 1000.0f;
-    config->particle_min_radius = 0.1f;
-    config->particle_max_radius = 0.5f;
+    config->particle_min_radius = 1.0f;
+    config->particle_max_radius = 5.0f;
     
     // Central body (e.g., sun in solar system)
     config->enable_central_body = 1;

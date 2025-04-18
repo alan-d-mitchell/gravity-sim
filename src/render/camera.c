@@ -24,7 +24,7 @@ enum Camera_Movement {
 #define ZOOM        45.0f
 
 void camera_init(Camera *camera) {
-    camera->position = (Vec3){0.0f, 0.0f, 10.0f}; // Start 10 units back
+    camera->position = (Vec3){0.0f, 5.0f, 30.0f}; // Start 10 units back
     camera->world_up = (Vec3){0.0f, 1.0f, 0.0f};
     camera->yaw = YAW;
     camera->pitch = PITCH;
